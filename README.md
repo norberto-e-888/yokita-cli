@@ -6,14 +6,16 @@ Builds express.js boilerplate and generates schematics for it
 [![Version](https://img.shields.io/npm/v/yokita-cli.svg)](https://npmjs.org/package/yokita-cli)
 
 <!-- toc -->
-* [yokita-cli](#yokita-cli)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [yokita-cli](#yokita-cli)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g @yokita/cli
 $ yokita COMMAND
@@ -25,14 +27,16 @@ USAGE
   $ yokita COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`yokita hello [FILE]`](#yokita-hello-file)
-* [`yokita help [COMMAND]`](#yokita-help-command)
-* [`yokita new [NAME]`](#yokita-new-name)
+
+- [`yokita hello [FILE]`](#yokita-hello-file)
+- [`yokita help [COMMAND]`](#yokita-help-command)
+- [`yokita new [NAME]`](#yokita-new-name)
 
 ## `yokita hello [FILE]`
 
@@ -80,8 +84,9 @@ USAGE
   $ yokita new [NAME]
 
 EXAMPLE
-  yokita new myApp
+  yokita new my-app
 ```
 
 _See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v1.0.1/src/commands/new.ts)_
+
 <!-- commandsstop -->
