@@ -1,20 +1,20 @@
-yokita-cli
-==========
+# yokita-cli
 
 Builds express.js boilerplate and generates schematics for it
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/yokita-cli.svg)](https://npmjs.org/package/yokita-cli)
-[![CircleCI](https://circleci.com/gh/norberto-e-888/yokita-cli/tree/master.svg?style=shield)](https://circleci.com/gh/norberto-e-888/yokita-cli/tree/master)
-[![Downloads/week](https://img.shields.io/npm/dw/yokita-cli.svg)](https://npmjs.org/package/yokita-cli)
-[![License](https://img.shields.io/npm/l/yokita-cli.svg)](https://github.com/norberto-e-888/yokita-cli/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g @yokita/cli
 $ yokita COMMAND
@@ -26,12 +26,16 @@ USAGE
   $ yokita COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`yokita hello [FILE]`](#yokita-hello-file)
-* [`yokita help [COMMAND]`](#yokita-help-command)
-* [`yokita new [NAME]`](#yokita-new-name)
+
+- [`yokita hello [FILE]`](#yokita-hello-file)
+- [`yokita help [COMMAND]`](#yokita-help-command)
+- [`yokita new [NAME]`](#yokita-new-name)
 
 ## `yokita hello [FILE]`
 
@@ -83,4 +87,5 @@ EXAMPLE
 ```
 
 _See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v1.0.0/src/commands/new.ts)_
+
 <!-- commandsstop -->
