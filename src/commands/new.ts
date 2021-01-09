@@ -82,8 +82,7 @@ export default class New extends Command {
     shell.touch(testEnvFileName);
     this.log(chalk.blueBright("Writing into .env files..."));
     const devEnvFileContent = shell.ShellString(
-      `NODE_ENV=development
-PORT=${port}
+      `PORT=${port}
 MONGO_URI=${mongoUriDev}
 JWT_SECRET_ACCESS_TOKEN=${jwtSecretAccessToken}
 JWT_SECRET_REFRESH_TOKEN=${jwtSecretRefreshToken}
@@ -98,19 +97,7 @@ ADMINS_EMAILS=${adminEmails}`
     );
 
     const testEnvFileContent = shell.ShellString(
-      `NODE_ENV=test
-PORT=${port}
-MONGO_URI=${mongoUriTesting}
-JWT_SECRET_ACCESS_TOKEN=${jwtSecretAccessToken}
-JWT_SECRET_REFRESH_TOKEN=${jwtSecretRefreshToken}
-CLIENT_URL=${clientUrlDev}
-SENDGRID_API_KEY=${sendGridApiKey}
-SENDGRID_FROM=${sendgridFromAddress}
-TWILIO_SID=${twilioSid}
-TWILIO_AUTH_TOKEN=${twilioAuthToken}
-TWILIO_NUMBER=${twilioNumber}
-# separate admin emails with a comma
-ADMINS_EMAILS=${adminEmails}`
+      `MONGO_URI=${mongoUriTesting}`
     );
 
     devEnvFileContent.to(devEnvFileName);
