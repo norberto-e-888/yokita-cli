@@ -16,11 +16,11 @@ Builds express.js boilerplate and generates schematics for it
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g yokita-cli
+$ npm install -g @yokita/cli
 $ yokita COMMAND
 running command...
 $ yokita (-v|--version|version)
-yokita-cli/0.0.0 win32-x64 node-v14.15.0
+@yokita/cli/0.0.0 win32-x64 node-v14.15.0
 $ yokita --help [COMMAND]
 USAGE
   $ yokita COMMAND
@@ -31,6 +31,7 @@ USAGE
 <!-- commands -->
 * [`yokita hello [FILE]`](#yokita-hello-file)
 * [`yokita help [COMMAND]`](#yokita-help-command)
+* [`yokita new [NAME]`](#yokita-new-name)
 
 ## `yokita hello [FILE]`
 
@@ -68,4 +69,18 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1/src/commands/help.ts)_
+
+## `yokita new [NAME]`
+
+generates boilerplate project in specified directory
+
+```
+USAGE
+  $ yokita new [NAME]
+
+EXAMPLE
+  yokita new myApp
+```
+
+_See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v0.0.0/src/commands/new.ts)_
 <!-- commandsstop -->

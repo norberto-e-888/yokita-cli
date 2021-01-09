@@ -1,5 +1,5 @@
 {
-  "name": "yokita-cli",
+  "name": "@yokita/cli",
   "description": "Builds express.js boilerplate and generates schematics for it",
   "version": "0.0.0",
   "author": "Norberto Cáceres @norberto-e-888",
