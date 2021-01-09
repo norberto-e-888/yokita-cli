@@ -2,7 +2,7 @@ import { Command } from "@oclif/command";
 import cli from "cli-ux";
 import * as shell from "shelljs";
 import * as crypto from "crypto";
-const chalk = require("chalk"); // ! strange behaviour using import makes me need this hack
+import chalk = require("chalk"); // ! strange behaviour using default export makes me need this hack
 
 export default class New extends Command {
   static description = "generates boilerplate project in specified directory";
