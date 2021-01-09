@@ -1,7 +1,7 @@
 {
   "name": "@yokita/cli",
   "description": "Builds express.js boilerplate and generates schematics for it",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Norberto Cáceres @norberto-e-888",
   "bin": {
     "yokita": "./bin/run"
