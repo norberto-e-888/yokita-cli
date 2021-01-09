@@ -75,7 +75,7 @@ export default class New extends Command {
     );
 
     shell.cd(args.name);
-    const devEnvFileName = ".env";
+    const devEnvFileName = ".env.development";
     const testEnvFileName = ".env.test";
     this.log(chalk.blueBright("Creating .env files..."));
     shell.touch(devEnvFileName);
