@@ -20,7 +20,7 @@ $ npm install -g @yokita/cli
 $ yokita COMMAND
 running command...
 $ yokita (-v|--version|version)
-@yokita/cli/0.0.0 win32-x64 node-v14.15.0
+@yokita/cli/1.0.0 win32-x64 node-v14.15.0
 $ yokita --help [COMMAND]
 USAGE
   $ yokita COMMAND
@@ -51,7 +51,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/norberto-e-888/yokita-cli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/norberto-e-888/yokita-cli/blob/v1.0.0/src/commands/hello.ts)_
 
 ## `yokita help [COMMAND]`
 
@@ -82,5 +82,5 @@ EXAMPLE
   yokita new myApp
 ```
 
-_See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v0.0.0/src/commands/new.ts)_
+_See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v1.0.0/src/commands/new.ts)_
 <!-- commandsstop -->
