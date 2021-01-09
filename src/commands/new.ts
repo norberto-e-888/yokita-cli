@@ -119,6 +119,7 @@ ADMINS_EMAILS=${adminEmails}`
     this.log(chalk.blueBright("Installing dependencies..."));
     shell.exec("npm i");
     this.log(chalk.greenBright("Dependencies successfully installed"));
+    this.log(chalk.redBright("Make sure redis is running on port 6379!"));
     shell.exec("code .");
   }
 }
