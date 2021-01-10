@@ -39,7 +39,7 @@ export default class New extends Command {
       });
 
       onboardingProgress.start(12, 0);
-      const port = await cli.prompt("port to expose app on", {
+      const port = await cli.prompt("\nport to expose app on", {
         default: "3001",
       });
 
