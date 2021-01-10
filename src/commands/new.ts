@@ -33,9 +33,8 @@ export default class New extends Command {
     );
 
     if (agressToOnboarding) {
-      let completed = 0;
       const onboardingProgress = cli.progress({
-        format: "env onboarding | {bar} | {value}/{total}",
+        format: "env onboarding | {value}/{total}",
       });
 
       onboardingProgress.start(12, 0);
@@ -43,68 +42,68 @@ export default class New extends Command {
         default: "3001",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const mongoUriDev = await cli.prompt("development MongoDB URI", {
         required: true,
         type: "hide",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const mongoUriTesting = await cli.prompt("testing MongoDB URI", {
         required: true,
         type: "hide",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const jwtSecretAccessToken =
         (await cli.prompt(
           "access token secret (if not provided a very strong one will be generated for you)",
           { required: false, type: "hide" }
         )) || crypto.randomBytes(128).toString("base64");
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const jwtSecretRefreshToken =
         (await cli.prompt(
           "refresh token secret (if not provided a very strong one will be generated for you)",
           { required: false, type: "hide" }
         )) || crypto.randomBytes(128).toString("base64");
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const clientUrlDev = await cli.prompt("development client app URL", {
         default: "http://localhost:3000",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const sendGridApiKey = await cli.prompt("sendgrid API Key", {
         required: true,
         type: "hide",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const sendgridFromAddress = await cli.prompt("sendgrid sender address", {
         required: true,
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const twilioSid = await cli.prompt("twilio SID", {
         required: true,
         type: "hide",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const twilioAuthToken = await cli.prompt("twilio auth token", {
         required: true,
         type: "hide",
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const twilioNumber = await cli.prompt("twilio sender number", {
         required: true,
       });
 
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
       const adminEmails = await cli.prompt("admin emails (comma separated)");
-      onboardingProgress.update(completed++);
+      onboardingProgress.increment();
 
       this.log(chalk.blueBright("writing into .env files..."));
       const devEnvFileContent = shell.ShellString(
