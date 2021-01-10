@@ -16,7 +16,7 @@ $ npm install -g @yokita/cli
 $ yokita COMMAND
 running command...
 $ yokita (-v|--version|version)
-@yokita/cli/1.0.8 win32-x64 node-v14.15.0
+@yokita/cli/1.0.9 win32-x64 node-v14.15.0
 $ yokita --help [COMMAND]
 USAGE
   $ yokita COMMAND
@@ -28,7 +28,7 @@ USAGE
 
 <!-- commands -->
 * [`yokita help [COMMAND]`](#yokita-help-command)
-* [`yokita new [APP-NAME]`](#yokita-new-app-name)
+* [`yokita new [NAME]`](#yokita-new-name)
 
 ## `yokita help [COMMAND]`
 
@@ -47,17 +47,17 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1/src/commands/help.ts)_
 
-## `yokita new [APP-NAME]`
+## `yokita new [NAME]`
 
 generates boilerplate project in specified directory
 
 ```
 USAGE
-  $ yokita new [APP-NAME]
+  $ yokita new [NAME]
 
 EXAMPLE
   yokita new my-app
 ```
 
-_See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v1.0.8/src/commands/new.ts)_
+_See code: [src/commands/new.ts](https://github.com/norberto-e-888/yokita-cli/blob/v1.0.9/src/commands/new.ts)_
 <!-- commandsstop -->
