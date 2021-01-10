@@ -9,7 +9,7 @@ export default class New extends Command {
 
   static examples = ["yokita new my-app"];
 
-  static args = [{ name: "app-name" }];
+  static args = [{ name: "name" }];
 
   async run() {
     const { args } = this.parse(New);
